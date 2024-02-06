@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <section class="section-1">
@@ -46,12 +46,13 @@
             </div>
         </div>
     </section>
-    <section class="section-3" >
-        <p class="aboutUs">ABOUT US</p>
+    <section class="section-3" data-aos="fade-up"
+    data-aos-duration="2000" >
+        <p class="aboutUs" >ABOUT US</p>
         <p class="aboutUs-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium molestias neque rerum tempora veniam unde esse quo tempore, perspiciatis voluptatibus quia harum at, non eaque nam ipsam porro vel fuga?</p>
     </section>
 
-    <section class="section-4">
+    <section class="section-4" >
         <p class="courses">COURSES</p>
         <div class="course-container">
             <div class="course-dtls">
@@ -77,7 +78,8 @@
         </div>
     </section>
     
-    <section class="section-5" >
+    <section class="section-5" data-aos="fade-up"
+    data-aos-duration="2000">
         <img class="director-img" src="./assets/message.jpg" alt="">
         <div class="message-container">
             <p class="message">MESSAGE FROM DIRECTORS</p>
@@ -90,7 +92,7 @@
         <!-- <div> -->
             <p class="our-team">OUR TEAM</p>
             <div class="profile-container"> 
-                <div class="team-dtls">
+                <div class="team-dtls" >
                     <img  class="profile" src="./assets/profile.webp" alt="">
                     <p>Dr John</p>
                 </div>
@@ -116,12 +118,12 @@
     <section class="section-7">
         <p class="education-gallery">EDUCATION GALLERY</p>
         <div class="gallery">
-            <img class="gallery-img" src="./assets/1000_F_284364895_3uU4w7qfgaBtBD0ugtA1SVgXHQJ5kL8d.jpg" alt="">
-            <img class="gallery-img" src="./assets/johanneberg_i0a2179_1920x1080px.webp" alt="">
-            <img class="gallery-img" src="./assets/maths.webp" alt="">
-            <img class="gallery-img" src="./assets/istockphoto-589125234-612x612.jpg" alt="">
+            <img data-aos="zoom-in-right" class="gallery-img" src="./assets/1000_F_284364895_3uU4w7qfgaBtBD0ugtA1SVgXHQJ5kL8d.jpg" alt="">
+            <img  class="gallery-img" src="./assets/johanneberg_i0a2179_1920x1080px.webp" alt="">
+            <img data-aos="zoom-in-left" class="gallery-img" src="./assets/maths.webp" alt="">
+            <img data-aos="zoom-in-right" class="gallery-img" src="./assets/istockphoto-589125234-612x612.jpg" alt="">
             <img class="gallery-img" src="./assets/istockphoto-994105168-612x612.jpg" alt="">
-            <img class="gallery-img" src="./assets/istockphoto-1588289996-612x612.jpg" alt="">
+            <img data-aos="zoom-in-left" class="gallery-img" src="./assets/istockphoto-1588289996-612x612.jpg" alt="">
         </div>
     </section>
 
@@ -164,4 +166,8 @@
     </section>
     
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
